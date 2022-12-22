@@ -1,25 +1,29 @@
-import logo from './logo.svg';
+
 import './App.css';
+import React from 'react'; 
+import NaverMapComponent from './components/NaverMapComponent';
+import { RenderAfterNavermapsLoaded} from 'react-naver-maps';
+import Header from './components/Header.js';
+import Tab from './components/Tab/Tab.js';
+import Footer from './components/Footer.js';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="App">
+      <Header />
+      <Tab/>
+      <Footer/>
     </div>
   );
 }
 
 export default App;
+
+/*
+      <RenderAfterNavermapsLoaded
+      ncpClientId={'3yna7clpbz'} 
+      error={<p>Maps Load Error</p>} 
+      loading={<p>Maps Loading...</p>}>
+      <NaverMapComponent/>
+      </RenderAfterNavermapsLoaded>
+*/

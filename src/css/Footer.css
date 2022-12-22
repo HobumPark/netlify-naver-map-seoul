@@ -1,0 +1,146 @@
+
+#footer{
+    width:90%;
+    height:250px;
+    /* background-color: burlywood;  */
+    margin:0 auto;  
+}
+
+/*푸터 위쪽*/
+#footer>#footer-top{
+    width:100%;
+    height:100px;
+    /* background-color: tan;  */
+    padding:20px 20px;
+    box-sizing: border-box;
+    border-top:1px solid #777;
+}
+
+
+#footer-top>ul>li{
+    float:left;
+}
+#footer-top>ul>li>a{
+    color:#777;
+}
+#footer-top>#bottom-menu{
+    float:left;
+}
+#footer-top>#bottom-menu>li{
+    margin-right: 20px;
+}
+#footer-top>#bottom-menu>li>a{
+    font-size: 12px;
+    position: relative;
+}
+#footer-top>#bottom-menu>li>a::after{
+    content:'';
+    display:block;
+    width:1px;
+    height:12px;
+    background-color: #777;
+    position: absolute;
+}
+#footer-top>#bottom-menu>li:nth-child(2)>a{
+    font-weight: bold;
+    color:#000000;
+}
+#bottom-menu>li:first-child>a::after{
+    left:85px;
+    top:2px;
+}
+#bottom-menu>li:nth-child(2)>a::after{
+    left:105px;
+    top:2px;
+}
+#bottom-menu>li:nth-child(3)>a::after{
+    left:75px;
+    top:2px;
+}
+#bottom-menu>li:nth-child(4)>a::after{
+    left:185px;
+    top:2px;
+}
+#bottom-menu>li:nth-child(5)>a::after{
+    left:97px;
+    top:2px;
+}
+#bottom-menu>li:nth-child(6)>a::after{
+    display:none !important;
+}
+#footer-top>#sns-menu{
+    float:right;
+}
+#footer-top>#sns-menu>li{
+    margin-right:10px;
+}
+
+/*푸터 아래쪽*/
+#footer>#footer-bottom{
+    width:90%;
+    height:100px;
+    /* background-color: teal;  */
+    margin:0 auto;
+    border-top:1px solid #777;
+}
+#footer-bottom>div{
+    padding:10px 10px;
+    box-sizing: border-box;
+}
+#footer-bottom>#footer-left{
+    float:left;
+    width:15%;
+    height:100%;
+    /* background-color: paleturquoise; */
+}
+#footer-bottom>#footer-mid{
+    float:left;
+    width:60%;
+    height:100%;
+    /* background-color: palevioletred; */
+}
+#footer-bottom>#footer-mid>address{
+    font-size: 12px;
+    color:#636363;
+    line-height: 1.6;
+}
+
+#footer-bottom>#footer-right{
+    float:left;
+    width:25%;
+    height:100%;
+    /* background-color: papayawhip; */
+}
+#footer-bottom>#footer-right>img{
+    margin: 5px;
+}
+#footer>button{
+    position: fixed;
+    bottom:100px;
+    right:100px;
+    border:none;
+    background-color: none;
+    cursor: pointer;
+}
+
+@media all and (max-width: 1200px) {
+    #footer-top>#bottom-menu{
+        position: relative;
+        left:10%;
+    }
+    #footer-top>#sns-menu{
+        display:none;
+    }
+
+    #footer-bottom>#footer-left{
+        display:none;
+    }
+    #footer-bottom>#footer-mid{
+        float:none;
+        display: block;
+        margin:0 auto; 
+    }
+    #footer-bottom>#footer-right{
+        display:none;
+    }
+} 
